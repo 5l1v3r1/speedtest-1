@@ -1918,6 +1918,7 @@ def shell():
     results = speedtest.results
 
     printer('Ping %(latency)s ms' % results.server, quiet)
+    #printer('Hosted by %(sponsor)s (%(name)s) [%(d)0.2f km]: ''%(latency)s ms' % results.server, quiet)
 
     if args.download:
         speedtest.download(threads=(None, 1)[args.single])
